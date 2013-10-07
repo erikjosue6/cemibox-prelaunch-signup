@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-CemiboxPrelaunchSignup::Application.config.secret_token = 'c23b9742648a9e52d4605adc2f85d7d83fce0c01797f3bb8012dec0a0b7ab28e1849b64b1f1167b0c42d326726780e2054e9c2877a38ec8e50f380d6cbc96a1a'
+CemiboxPrelaunchSignup::Application.config.secret_token = 'd37c779912579bcdd0736f81491e37cca6e05f2c4e3ba5dce26ea03b597d1c77fb0f10001e93239dae189242ccbe8f4034b1e43fc10bf313c669d13bb2d5ec4b'
