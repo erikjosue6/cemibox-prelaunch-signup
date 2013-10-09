@@ -122,6 +122,7 @@ GEM
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
@@ -218,6 +219,7 @@ DEPENDENCIES
   hub
   jquery-rails
   launchy
+  pg
   quiet_assets
   rails (= 3.2.14)
   rails_layout
