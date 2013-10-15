@@ -74,6 +74,7 @@ class User < ActiveRecord::Base
   #end
 
   def add_user_to_mailchimp
+    return unless ENV['RAILS_ENV']=='production'
     Rails.logger.info "admin email is #{ENV['ADMIN_EMAIL']}"
     Rails.logger.info "user email is #{self.email}"
     return if self.email.include?(ENV['ADMIN_EMAIL'])
@@ -86,7 +87,7 @@ class User < ActiveRecord::Base
       :update_existing => true,
       :send_welcome => true
       })
-    Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
+  #  Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
   end  
 
   def remove_user_from_mailchimp
